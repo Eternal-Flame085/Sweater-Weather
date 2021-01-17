@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pexels.com/v1/search?orientation=landscape&per_page=5&query=Miami,Fl
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - 563492ad6f917000010000019dfeaeb0bd3c489db80aad4f3cbfabdc
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 17 Jan 2021 19:09:26 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1013'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cf_bm=1ab36c6736e14d020b0f897db6031429dde1932d-1610910566-1800-AcCTmD0xGA2xDad4sALYo2yXYZF19Rwluk9d1u3tTp78PCaIFpJwiEYPEBV5UrFI7eUrI36kmqmz33wZHMKJueM=;
+        path=/; expires=Sun, 17-Jan-21 19:39:26 GMT; domain=.pexels.com; HttpOnly;
+        Secure; SameSite=None
+      - __cfduid=dbf39f998254dfb2cd24d4b39a097e1a81610910566; expires=Tue, 16-Feb-21
+        19:09:26 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax; Secure
+      - __cfduid=deee3a88ac26b6c85927b2697b000b5391610910566; expires=Tue, 16-Feb-21
+        19:09:26 GMT; path=/; domain=.pexels.com; HttpOnly; SameSite=Lax; Secure
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Cf-Cache-Status:
+      - DYNAMIC
+      Cf-Request-Id:
+      - 07b359a0370000b8b1b0bff000000001
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - ALLOWALL
+      X-Ratelimit-Limit:
+      - '20000'
+      X-Ratelimit-Remaining:
+      - '19997'
+      X-Ratelimit-Reset:
+      - '1613429039'
+      X-Request-Id:
+      - 53059b39-7358-4a2c-9593-0088f28c7dfb
+      X-Runtime:
+      - '0.061541'
+      X-Server:
+      - master
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 61325ee05b64b8b1-MIA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"page":1,"per_page":5,"photos":[{"id":3411135,"width":5472,"height":3648,"url":"https://www.pexels.com/photo/photo-of-castle-during-daytime-3411135/","photographer":"Craig
+        Adderley","photographer_url":"https://www.pexels.com/@thatguycraig000","photographer_id":657879,"avg_color":"#3D7790","src":{"original":"https://images.pexels.com/photos/3411135/pexels-photo-3411135.jpeg","large2x":"https://images.pexels.com/photos/3411135/pexels-photo-3411135.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3411135/pexels-photo-3411135.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3411135/pexels-photo-3411135.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3411135/pexels-photo-3411135.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3411135/pexels-photo-3411135.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3411135/pexels-photo-3411135.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3411135/pexels-photo-3411135.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":2225499,"width":3707,"height":2712,"url":"https://www.pexels.com/photo/coconut-trees-2225499/","photographer":"Nextvoyage","photographer_url":"https://www.pexels.com/@nextvoyage","photographer_id":146718,"avg_color":"#7A7A5D","src":{"original":"https://images.pexels.com/photos/2225499/pexels-photo-2225499.jpeg","large2x":"https://images.pexels.com/photos/2225499/pexels-photo-2225499.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/2225499/pexels-photo-2225499.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/2225499/pexels-photo-2225499.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/2225499/pexels-photo-2225499.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/2225499/pexels-photo-2225499.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/2225499/pexels-photo-2225499.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/2225499/pexels-photo-2225499.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":421655,"width":3872,"height":2592,"url":"https://www.pexels.com/photo/architecture-blue-bridge-buildings-421655/","photographer":"Elvis
+        Vasquez","photographer_url":"https://www.pexels.com/@elvis-vasquez-136708","photographer_id":136708,"avg_color":"#363131","src":{"original":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg","large2x":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/421655/pexels-photo-421655.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":1034597,"width":2880,"height":2237,"url":"https://www.pexels.com/photo/man-and-woman-sitting-on-brown-wooden-bench-1034597/","photographer":"Monica
+        Silvestre","photographer_url":"https://www.pexels.com/@monica","photographer_id":202413,"avg_color":"#8A9BAC","src":{"original":"https://images.pexels.com/photos/1034597/pexels-photo-1034597.jpeg","large2x":"https://images.pexels.com/photos/1034597/pexels-photo-1034597.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/1034597/pexels-photo-1034597.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/1034597/pexels-photo-1034597.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/1034597/pexels-photo-1034597.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/1034597/pexels-photo-1034597.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/1034597/pexels-photo-1034597.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/1034597/pexels-photo-1034597.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false},{"id":3663416,"width":5040,"height":3360,"url":"https://www.pexels.com/photo/palm-trees-near-building-3663416/","photographer":"One
+        Shot","photographer_url":"https://www.pexels.com/@bluerhinomedia","photographer_id":77941,"avg_color":"#889695","src":{"original":"https://images.pexels.com/photos/3663416/pexels-photo-3663416.jpeg","large2x":"https://images.pexels.com/photos/3663416/pexels-photo-3663416.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=2\u0026h=650\u0026w=940","large":"https://images.pexels.com/photos/3663416/pexels-photo-3663416.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=650\u0026w=940","medium":"https://images.pexels.com/photos/3663416/pexels-photo-3663416.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=350","small":"https://images.pexels.com/photos/3663416/pexels-photo-3663416.jpeg?auto=compress\u0026cs=tinysrgb\u0026h=130","portrait":"https://images.pexels.com/photos/3663416/pexels-photo-3663416.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=1200\u0026w=800","landscape":"https://images.pexels.com/photos/3663416/pexels-photo-3663416.jpeg?auto=compress\u0026cs=tinysrgb\u0026fit=crop\u0026h=627\u0026w=1200","tiny":"https://images.pexels.com/photos/3663416/pexels-photo-3663416.jpeg?auto=compress\u0026cs=tinysrgb\u0026dpr=1\u0026fit=crop\u0026h=200\u0026w=280"},"liked":false}],"total_results":37,"next_page":"https://api.pexels.com/v1/search/?orientation=landscape\u0026page=2\u0026per_page=5\u0026query=miami%2Cfl"}'
+  recorded_at: Sun, 17 Jan 2021 19:09:26 GMT
+recorded_with: VCR 6.0.0
