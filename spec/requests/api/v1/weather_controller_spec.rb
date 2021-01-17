@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe "Weather api" do
-  it "returns a resialized json" do
+  it "returns a sesialized json" do
     VCR.use_cassette('open_weather_api_call') do
       VCR.use_cassette('map_quest_api_call') do
         location = "denver,co"
@@ -10,7 +10,7 @@ describe "Weather api" do
         expect(response).to be_successful
 
         weather = JSON.parse(response.body, symbolize_names: true)
-        
+
         expect(weather).to be_a(Hash)
         expect(weather[:data]).to be_a(Hash)
         expect(weather[:data][:type]).to be_a(String)
