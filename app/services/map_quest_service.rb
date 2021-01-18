@@ -6,8 +6,17 @@ class MapQuestService
       end
 
       data = JSON.parse(response.body, symbolize_names: true)
-      
+
       data[:results][0][:locations][0][:latLng]
+    end
+
+    def fetch_route(trip_info)
+      response = conn.get("/directions/v2/route") do |map_quest|
+        map_quest.params[:from] = trip_info[:origin]
+        map_quest.params[:to] = trip_info[:destination]
+      end
+
+      JSON.parse(response.body, symbolize_names: true)
     end
 
     private
