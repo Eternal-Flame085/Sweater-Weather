@@ -5,11 +5,11 @@
 - [Learning Goals](#learning-goals)
 - [Setup](#setup)
 - [Endpoints](#endpoints)
-  - [Retrieve weather for a city](#retrieve weather)
+  - [Retrieve weather for a city](#retrieve-weather)
   - [Background Image for the City](#background)
-  - [User Registration](#user registration)
+  - [User Registration](#user-registration)
   - [Login](#login)
-  - [Road Trip](#road trip)
+  - [Road Trip](#road-trip)
 
 <!-- DESCRIPTION -->
 ## Description
