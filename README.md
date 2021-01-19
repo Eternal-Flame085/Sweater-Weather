@@ -3,10 +3,11 @@
 ## Table of Contents
 - [Description](#description)
 - [Learning Goals](#learning goals)
+- [setup](#setup)
 - [Setup](#setup)
 - [Endpoints](#endpoints)
   - [Retrieve weather for a city](#retrieve weather)
-  - [Background Image for the City](#BACKGROUND)
+  - [Background Image for the City](#background)
   - [User Registration](#user registration)
   - [Login](#login)
   - [Road Trip](#road trip)
