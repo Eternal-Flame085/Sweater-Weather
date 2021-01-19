@@ -1,9 +1,10 @@
 class Api::V1::TripsController < ApplicationController
   def create
+    units = params[:units] if !params[:units].nil?
     if params[:api_key].nil? || User.find_by(api_key: params[:api_key]).nil?
       render status: 401, json: { errors: "Unauthorized"}
     else
-      road_trip = RoadTripFacade.fetch_road_trip_info(route_params)
+      road_trip = RoadTripFacade.fetch_road_trip_info(route_params, units = 'imperial')
       render status: 201, json: RoadtripSerializer.new(road_trip)
     end
   end

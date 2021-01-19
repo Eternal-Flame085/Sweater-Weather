@@ -9,15 +9,12 @@ class RoadTrip
   end
 
   def format_weather(road_trip_time, weather_data)
-    if !weather_data.nil?
-      weather_data[:hourly].each do |hour|
-        if Time.at(hour[:dt]).utc.strftime('%I') == Time.at(weather_data[:current][:dt]).utc.strftime('%I')
-          weather_at_eta = weather_data[:hourly][ weather_data[:hourly].index(hour) + (road_trip_time / 3600) ]
-          break {temperature: weather_at_eta[:temp], conditions: weather_at_eta[:weather][0][:description]}
-        end
+    return {} if weather_data.nil?
+    weather_data[:hourly].each do |hour|
+      if Time.at(hour[:dt]).utc.strftime('%I') == Time.at(weather_data[:current][:dt]).utc.strftime('%I')
+        weather_at_eta = weather_data[:hourly][ weather_data[:hourly].index(hour) + (road_trip_time / 3600) ]
+        break {temperature: weather_at_eta[:temp], conditions: weather_at_eta[:weather][0][:description]}
       end
-    else
-      {}
     end
   end
 

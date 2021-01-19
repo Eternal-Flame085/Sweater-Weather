@@ -4,7 +4,7 @@ describe Forecast do
   before :each do
     VCR.use_cassette('open_weather_api_call') do
       denver_coords = {lat: 39.738453, lng: -104.984853}
-      weather_data = OpenWeatherService.fetch_location_weather(denver_coords)
+      weather_data = OpenWeatherService.fetch_location_weather(denver_coords, 'imperial')
 
       @weather_poro = Forecast.new(weather_data)
     end
@@ -57,5 +57,18 @@ describe Forecast do
     expect(@weather_poro.hourly_weather[0][:wind_direction]).to be_a(String)
     expect(@weather_poro.hourly_weather[0][:conditions]).to be_a(String)
     expect(@weather_poro.hourly_weather[0][:icon]).to be_a(String)
+  end
+  it "Created a poro with the units as imperial" do
+    expect(@weather_poro.current_weather[:temperature]).to eq(42.82)
+  end
+
+  it "Created a poro with the units as metric" do
+    VCR.use_cassette('open_weather_api_call_metric') do
+      denver_coords = {lat: 39.738453, lng: -104.984853}
+      weather_data = OpenWeatherService.fetch_location_weather(denver_coords, 'metric')
+
+      weather_poro = Forecast.new(weather_data)
+      expect(weather_poro.current_weather[:temperature]).to eq(0.44)
+    end
   end
 end

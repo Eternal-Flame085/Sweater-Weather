@@ -4,7 +4,7 @@ describe "Open Weather Service Api" do
   it "returns weathher data for given coordinates" do
     VCR.use_cassette('open_weather_api_call') do
       denver_coords = {lat: 39.738453, lng: -104.984853}
-      weather_data = OpenWeatherService.fetch_location_weather(denver_coords)
+      weather_data = OpenWeatherService.fetch_location_weather(denver_coords, 'imperial')
 
       #Current Weather
       expect(weather_data[:current]).to be_a(Hash)

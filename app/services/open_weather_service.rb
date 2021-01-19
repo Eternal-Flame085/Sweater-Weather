@@ -1,10 +1,10 @@
 class OpenWeatherService
   class << self
-    def fetch_location_weather(coordinates)
+    def fetch_location_weather(coordinates, units)
       response = conn.get("/data/2.5/onecall?") do |req|
         req.params[:lat] = coordinates[:lat]
         req.params[:lon] = coordinates[:lng]
-        req.params[:units] = 'imperial'
+        req.params[:units] = units
         req.params[:exclude] = 'minutely, alerts'
       end
 

@@ -8,7 +8,7 @@ describe RoadTrip do
           trip_info = {origin: "Denver,CO", destination: "Pueblo,CO"}
           road_trip_route = MapQuestService.fetch_route(trip_info)
           destination_coords = MapQuestService.fetch_coordiantes(trip_info[:destination])
-          destination_weather = OpenWeatherService.fetch_location_weather(destination_coords)
+          destination_weather = OpenWeatherService.fetch_location_weather(destination_coords, 'imperial')
           road_trip = RoadTrip.new(trip_info, road_trip_route[:route][:realTime], destination_weather)
 
           expect(road_trip).to be_a(RoadTrip)

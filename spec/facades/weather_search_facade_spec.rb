@@ -5,7 +5,7 @@ describe WeatherSearchFacade do
     VCR.use_cassette('open_weather_api_call') do
       VCR.use_cassette('map_quest_api_call') do
         denver = "denver,co"
-        weather = WeatherSearchFacade.find_weather(denver)
+        weather = WeatherSearchFacade.find_weather(denver, 'imperial')
 
         expect(weather).to be_a(Forecast)
         expect(weather.current_weather).to be_a(Hash)

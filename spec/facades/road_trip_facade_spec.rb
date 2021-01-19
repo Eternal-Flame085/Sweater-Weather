@@ -6,7 +6,7 @@ describe RoadTripFacade do
       VCR.use_cassette("pueblo_co_coords") do
         VCR.use_cassette("pueblo_weather_data") do
           trip_info = {origin: "Denver,CO", destination: "Pueblo,CO"}
-          road_trip = RoadTripFacade.fetch_road_trip_info(trip_info)
+          road_trip = RoadTripFacade.fetch_road_trip_info(trip_info, 'imperial')
 
           expect(road_trip).to be_a(RoadTrip)
           expect(road_trip.start_city).to be_a(String)
@@ -25,7 +25,7 @@ describe RoadTripFacade do
   it "fetch_road_trip_info returns a roadtrip poro with an impossible route error" do
     VCR.use_cassette('map_quest_api_route_unsuccessful') do
       trip_info = {origin: "Denver,CO", destination: "London,UK"}
-      road_trip = RoadTripFacade.fetch_road_trip_info(trip_info)
+      road_trip = RoadTripFacade.fetch_road_trip_info(trip_info, 'imperial')
 
       expect(road_trip).to be_a(RoadTrip)
       expect(road_trip.start_city).to be_a(String)
