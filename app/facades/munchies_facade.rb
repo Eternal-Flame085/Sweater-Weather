@@ -10,8 +10,7 @@ class MunchiesFacade
       time_of_arrival = destination_weather[:current][:dt] + munchies_trip_route[:route][:realTime]
       restaurant = YelpService.find_restaurant(route[:destination], munchies_route_info['food'], time_of_arrival)
 
-      test = Munchie.new(route[:destination], munchies_trip_route, destination_weather, restaurant)
-      require "pry"; binding.pry
+      Munchie.new(route[:destination], munchies_trip_route, destination_weather, restaurant)
     end
   end
 end
