@@ -5,6 +5,7 @@ describe MunchiesFacade do
     VCR.use_cassette('map_quest_api_denver_pueblo') do
       munchies_route_info = {"start"=>"denver,co", "end"=>"pueblo,co", "food"=>"chinese"}
       munchies = MunchiesFacade.find_food_for_destination(munchies_route_info)
+
       require "pry"; binding.pry
       expect(munchies).to be_a(Hash)
       expect(munchies[:data]).to be_a(Hash)

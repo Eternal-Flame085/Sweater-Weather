@@ -1,10 +1,10 @@
 require 'rails_helper'
 
 describe "trips controller" do
-  VCR.use_cassette('map_quest_api_denver_pueblo') do
-    VCR.use_cassette('pueblo_co_coords') do
-      VCR.use_cassette('pueblo_weather_data') do
-        it "returns a serialized road trip poro if there is a possible route and valid api key is given" do
+  it "returns a serialized road trip poro if there is a possible route and valid api key is given" do
+    VCR.use_cassette('map_quest_api_denver_pueblo') do
+      VCR.use_cassette('pueblo_co_coords') do
+        VCR.use_cassette('pueblo_weather_data') do
 
           get "/api/v1/munchies?start=denver,co&end=pueblo,co&food=chinese"
 
