@@ -2,8 +2,7 @@
 # Sweater Weather
 ## Table of Contents
 - [Description](#description)
-- [Learning Goals](#learning goals)
-- [setup](#setup)
+- [Learning Goals](#learning-goals)
 - [Setup](#setup)
 - [Endpoints](#endpoints)
   - [Retrieve weather for a city](#retrieve weather)
