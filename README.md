@@ -5,8 +5,8 @@
 - [Learning Goals](#learning-goals)
 - [Setup](#setup)
 - [Endpoints](#endpoints)
-  - [Retrieve weather for a city](#retrieve-weather)
-  - [Background Image for the City](#background)
+  - [Retrieve weather for a city](#weather)
+  - [Background Image for the City](#image)
   - [User Registration](#user-registration)
   - [Login](#login)
   - [Road Trip](#road-trip)
@@ -40,7 +40,7 @@ This project requires the use of Ruby ```2.5.3``` and Rails ```5.2.4.3```
 <!-- ENDPOINTS -->
 ## Endpoints
 
-<!-- RETRIEVE WEATHER -->
+<!-- WEATHER -->
 ### Retrieve weather for a city
 This endpoint allows you to get the weather information for the destination.<br><br>
 Example request: ```GET /api/v1/forecast?location=denver,co```<br>
@@ -48,7 +48,7 @@ Query parameters:
 - Location (required)
 - units (optional)
 
-<!-- BACKGROUND -->
+<!-- Image -->
 ### Background Image for the City
 This endpoint allows you to get a background image for the destination.<br><br>
 Example request: ```GET /api/v1/backgrounds?location=denver,co```<br>
