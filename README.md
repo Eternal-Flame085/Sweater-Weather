@@ -1,7 +1,9 @@
 
 # Sweater Weather
+## Description
+This app will allow users to see the current weather as well as the forecasted weather at the destination.
+
 ## Table of Contents
-- [Description](#description)
 - [Learning Goals](#learning-goals)
 - [Setup](#setup)
 - [Endpoints](#endpoints)
@@ -10,11 +12,6 @@
   - [User Registration](#user-registration)
   - [Login](#login)
   - [Road Trip](#road-trip)
-
-<!-- DESCRIPTION -->
-## Description
-This app will allow users to see the current weather as well as the forecasted weather at the destination.
-
 <!-- LEARNING GOALS -->
 ## Learning Goals
 - Expose an API that aggregates data from multiple external APIs
@@ -48,7 +45,7 @@ Query parameters:
 - Location (required)
 - units (optional)
 
-<!-- Image -->
+<!-- IMAGE -->
 ### Background Image for the City
 This endpoint allows you to get a background image for the destination.<br><br>
 Example request: ```GET /api/v1/backgrounds?location=denver,co```<br>
