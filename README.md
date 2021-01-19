@@ -6,7 +6,7 @@
 - [Setup](#setup)
 - [Endpoints](#endpoints)
   - [Retrieve weather for a city](#retrieve weather)
-  - [Background Image for the City](#background)
+  - [Background Image for the City](#BACKGROUND)
   - [User Registration](#user registration)
   - [Login](#login)
   - [Road Trip](#road trip)
