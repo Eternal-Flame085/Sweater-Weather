@@ -7,6 +7,7 @@ This app will allow users to see the current weather as well as the forecasted w
 - [Learning Goals](#learning-goals)
 - [Setup](#setup)
 - [Endpoints](#endpoints)
+
 <!-- LEARNING GOALS -->
 ## Learning Goals
 - Expose an API that aggregates data from multiple external APIs
@@ -26,8 +27,12 @@ This project requires the use of Ruby ```2.5.3``` and Rails ```5.2.4.3```
 3. Run `bundle install` to install gems and dependencies
 
 4. Run `bundle exec rails db:{create,migrate}` to set up the database and to run the migrations
-5. Get Api keys for 
-7. Run `Figaro install` to make the application.yml file
+
+5. Get Api keys for [MapQuest](https://developer.mapquest.com/documentation/geocoding-api/), [OpenWeather](https://openweathermap.org/api/one-call-api), and [Pexels](https://www.pexels.com/api/documentation/)
+
+7. Run `Figaro install` to make the application.yml file and make Environmental variables: MAP_QUEST, OPEN_WEATHER, PEXELS with your api keys
+
+8. Run ```Rspec```
 
 <!-- ENDPOINTS -->
 ## Endpoints
