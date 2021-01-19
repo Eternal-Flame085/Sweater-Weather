@@ -7,11 +7,6 @@ This app will allow users to see the current weather as well as the forecasted w
 - [Learning Goals](#learning-goals)
 - [Setup](#setup)
 - [Endpoints](#endpoints)
-  - [Retrieve weather for a city](#weather-for-city)
-  - [Background Image for the City](#image)
-  - [User Registration](#user-registration)
-  - [Login](#login)
-  - [Road Trip](#road-trip)
 <!-- LEARNING GOALS -->
 ## Learning Goals
 - Expose an API that aggregates data from multiple external APIs
@@ -37,7 +32,6 @@ This project requires the use of Ruby ```2.5.3``` and Rails ```5.2.4.3```
 <!-- ENDPOINTS -->
 ## Endpoints
 
-<!-- WEATHER FOR CITY -->
 ### Retrieve weather for a city
 This endpoint allows you to get the weather information for the destination.<br><br>
 Example request: ```GET /api/v1/forecast?location=denver,co```<br>
@@ -45,7 +39,6 @@ Query parameters:
 - Location (required)
 - units (optional)
 
-<!-- IMAGE -->
 ### Background Image for the City
 This endpoint allows you to get a background image for the destination.<br><br>
 Example request: ```GET /api/v1/backgrounds?location=denver,co```<br>
@@ -65,7 +58,6 @@ This Endpoint requires a json payload to be sent in the body:
 }
 ```
 
-<!-- LOGIN -->
 ### Login
 This endpoint allows a user to login and returns their apikey as a response.<br><br>
 Example request: ``` POST /api/v1/sessions ```
@@ -77,7 +69,6 @@ This Endpoint requires a json payload to be sent in the body:
 }
 ```
 
-<!-- ROADTRIP -->
 ### Road Trip
 This endpoint returns information required for a roadtrip.<br><br>
 Example request: ```POST /api/v1/road_trip ```
