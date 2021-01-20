@@ -13,7 +13,7 @@ describe "Map Quest Service Api" do
   end
 
   it "fetch_route returns the route travel time" do
-    VCR.use_cassette("map_quest_api_route_success") do
+    VCR.use_cassette("trips") do
       trip_info = {origin: "Denver,CO", destination: "Pueblo,CO"}
 
       route = MapQuestService.fetch_route(trip_info)

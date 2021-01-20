@@ -11,7 +11,7 @@ class MapQuestService
     end
 
     def fetch_route(trip_info)
-      response = conn.get("/directions/v2/route") do |map_quest|
+      response = conn.get("/directions/v2/route?") do |map_quest|
         map_quest.params[:from] = trip_info[:origin]
         map_quest.params[:to] = trip_info[:destination]
       end
