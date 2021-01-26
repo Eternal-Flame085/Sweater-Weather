@@ -11,5 +11,5 @@ jobs:
       - checkout
       - run:
           name: Which bundler?
-          command: bundle exec rspec
+          command: bundle
       - ruby/bundle-install
